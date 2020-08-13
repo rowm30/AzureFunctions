@@ -1,0 +1,26 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post" ,"options"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+        "name": "out",
+        "type": "table",
+        "direction": "out",
+        "tableName": "gamesettings",
+        "connection": "AzureWebJobsStorage"
+    }    
+  ]
+}
